@@ -1,14 +1,10 @@
-#React Workshop @ Facebook Developer Circles - Buenos Aires
+# React Workshop @ Facebook Developer Circles - Buenos Aires
 
 ### Welcome!
 
 This is the material needed for the React Workshop that will take place at Buenos Aires Facebook Developer Circles 2017.
 
-##Content
-
-[TOC]
-
-##Start
+## Start
 
 First of all, start to install `Git` & `npm` (and optionally `yarn`):
 
@@ -19,12 +15,17 @@ First of all, start to install `Git` & `npm` (and optionally `yarn`):
 ## Why react?
 
 - Focused mainly on the user interface
-- Component based 
+- Component based (composition model)
 - Virtual DOM
-- < JSX >< /JSX >
+- ```<JSX></JSX>```
 - /routing/solution
 - React Native
 - Facebook stands behind this project 
+
+## Life Cycle
+
+![](https://raw.githubusercontent.com/Alfafc/react-workshop/master/public/reactjs_component_lifecycle_status.png)
+
 
 ### 0 Creating an app
 
@@ -34,16 +35,22 @@ You can do the same, doing this:
 `yarn global add create-react-app`
 `create-react-app react-workshop`
 
+
 ### 1 Hello world
 
+First met with react.
+Understand Virtual DOM and under the hood of JSX.
+Play around with JSX and non JSX syntax.
 
-## Redux (recommended)
+### 2 Hello message
 
-## Life Cycle
+First met with props.
 
 ## Router
 
 yarn add react-router-dom
+
+## Redux (recommended)
 
 ## Performance
 
@@ -54,3 +61,9 @@ https://reactjs.org/docs/installation.html
 https://pandao.github.io/editor.md/en.html
 
 https://github.com/facebookincubator/create-react-app
+
+## License
+
+MIT 
+
+Feel free to use this if it can help you in any way, and contribute to it too :) 

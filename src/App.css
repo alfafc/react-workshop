@@ -1,4 +1,16 @@
-.App {
-    text-align: center;
+.header {
+    padding-left: 15px;
+    background-color: black;
+    color: white;
+    link: white;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+
+.menu {
+    margin-left: 5px;
+    text-align: left;
 }
 

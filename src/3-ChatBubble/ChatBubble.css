@@ -1,0 +1,26 @@
+.speech-bubble {
+    position: relative;
+    background: white;
+    border-color: #007582;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: .4em;
+    width: 350px;
+    padding-left: 10px ;
+    padding-right: 10px ;
+}
+
+.speech-bubble-triangle {
+    content: '';
+    position: relative;
+    bottom: 0;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: #007582;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -20.5px;
+    margin-bottom: -41px;
+}
