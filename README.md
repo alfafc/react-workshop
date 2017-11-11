@@ -12,9 +12,10 @@ First of all, start to install `Git` & `npm` (and optionally `yarn`):
 - node https://nodejs.org/en/
 - yarn https://yarnpkg.com/en/docs/install
 
-Also it will be useful to install dev-tools for Chrome:
+Also it will be useful to install dev-tools and react-perf for Chrome:
 
 - https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+- https://chrome.google.com/webstore/detail/react-perf/hacmcodfllhbnekmghgdlplbdnahmhmm
 
 ## Why react?
 
@@ -38,19 +39,20 @@ React components and their life cycle:
 First met with react and hot reload
 Understand Virtual DOM and under the hood of JSX
 Play around with JSX and non JSX syntax
+Task: create the same component with non JSX and then, as pure component (js function)
+What is better in terms of performance?
 
 ### 2 Hello message
 
 First met with props and components composition
 Play with defaults values and required props
-Task: install 
 Task: add your profile image to the message
 
 ### 3 Hello your name
 
 First met with `react-router-dom`, and another way of receiving props
 Play with routes, paths, and "match" object
-Look at history changes in react devtools
+Task: Look at history changes in react devtools
 Task: print current url and add a button to go back and forward in history with match.history.goBack/goForward
 
 ### 4 Chat bubble
@@ -64,23 +66,28 @@ Task: implement state to become a stateful component
 
 ### 5 Chat List
 
-First met with `?react_perf in the query string` 
-Task: run react performance
+First met with `react-perf-tool` and `react-addons-perf`
+Task: uncomment perf line in App and run react performance tools, check instance and render count with inclusive option selected
+Task: increase chat bubbles to 10k and implement react-infinite
 
-(`react-perf-tool` and `react-addons-perf` not working on react 16 yet)
+### 6 Anim
 
+First met with `react-motion`
+Task: implement message fade-in and fade-out with a button 
 
-## Redux (recommended)
+### 7 Lab
 
-
-### Creating an app
-
+Just create your first app and start your project with reactjs.
 For your first app, use `create-react-app` tool, it will make your life easier getting all default configurations:
 
 `yarn global add create-react-app`
 `create-react-app react-workshop`
 
 Also you can fork this project ;)
+
+### Finishing
+
+Remember to pull request your results of the workshop, it may help others in the future
 
 ## License
 
