@@ -8,11 +8,17 @@ class ChatList extends Component {
         return <div>
             {
                 this.props.messages.map(m => {
-                    return <ChatBubble key={key++} message={m}/>;
+                    return <ChatBubble key={key++} message={m.text}/>;
                 })
             }
         </div>;
     }
 }
+
+let messages = [];
+for (let i = 0; i < 10000; i++)
+    messages.push({text: "hi " + i});
+
+ChatList.defaultProps = {messages: messages};
 
 export default ChatList;

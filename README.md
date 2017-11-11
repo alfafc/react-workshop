@@ -64,19 +64,12 @@ Task: implement state to become a stateful component
 
 ### 5 Chat List
 
-
-First met with react-perf-tool and react-addons-perf
+First met with `?react_perf in the query string` 
 Task: run react performance
 
-## Performance
+(`react-perf-tool` and `react-addons-perf` not working on react 16 yet)
 
-https://www.fullstackreact.com/articles/redux-with-mark-erikson/
 
-https://reactjs.org/docs/installation.html
-
-https://pandao.github.io/editor.md/en.html
-
-https://github.com/facebookincubator/create-react-app
 ## Redux (recommended)
 
 
