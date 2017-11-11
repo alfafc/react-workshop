@@ -16,8 +16,9 @@ class ChatList extends Component {
 }
 
 let messages = [];
-for (let i = 0; i < 10000; i++)
+for (let i = 0; i < 10; i++) {
     messages.push({text: "hi " + i});
+}
 
 ChatList.defaultProps = {messages: messages};
 

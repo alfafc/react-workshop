@@ -38,19 +38,20 @@ React components and their life cycle:
 First met with react and hot reload
 Understand Virtual DOM and under the hood of JSX
 Play around with JSX and non JSX syntax
+Task: create the same component with non JSX and then, as pure component (js function)
+What is better in terms of performance?
 
 ### 2 Hello message
 
 First met with props and components composition
 Play with defaults values and required props
-Task: install 
 Task: add your profile image to the message
 
 ### 3 Hello your name
 
 First met with `react-router-dom`, and another way of receiving props
 Play with routes, paths, and "match" object
-Look at history changes in react devtools
+Task: Look at history changes in react devtools
 Task: print current url and add a button to go back and forward in history with match.history.goBack/goForward
 
 ### 4 Chat bubble
@@ -67,8 +68,7 @@ Task: implement state to become a stateful component
 First met with `?react_perf in the query string` 
 Task: run react performance
 
-(`react-perf-tool` and `react-addons-perf` not working on react 16 yet)
-
+(`react-perf-tool` and `react-addons-perf` not working on react v16 yet)
 
 ## Redux (recommended)
 
