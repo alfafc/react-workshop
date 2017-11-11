@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import HelloMessage from '../2-HelloMessage/HelloMessage';
+import moment from 'moment';
 import "./ChatBubble.css";
 
 class ChatBubble extends Component {
@@ -16,6 +16,7 @@ class ChatBubble extends Component {
     render() {
         return <div>
             <div className="speech-bubble">
+                <span className="bubble-time">{moment().add(this.ticks * -1, 's').fromNow()}</span>
                 {this.props.message}
             </div>
             <div className="speech-bubble-triangle">

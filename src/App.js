@@ -3,8 +3,9 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import HelloWorld from './1-HelloWorld/HelloWorld';
-import HelloYou from './2-HelloMessage/HelloMessage';
-import ChatBubble from "./3-ChatBubble/ChatBubble";
+import HelloMessage from './2-HelloMessage/HelloMessage';
+import HelloYourName from "./3-HelloYourName/HelloYourName";
+import ChatBubble from "./4-ChatBubble/ChatBubble";
 
 class App extends Component {
     render() {
@@ -22,8 +23,9 @@ class App extends Component {
 
                             <div className="menu">
                                 <Link to="/hello-world">1- HelloWorld</Link><br/>
-                                <Link to="/hello-you/Mark">2- HelloYou</Link><br/>
-                                <Link to="/chat-bubble">3- ChatBubble</Link>
+                                <Link to="/hello-message">2- HelloMessage</Link><br/>
+                                <Link to="/hello-your-name/'your name'">3- HelloYourName</Link><br/>
+                                <Link to="/chat-bubble">4- ChatBubble</Link>
                             </div>
 
                             <br/>
@@ -35,11 +37,11 @@ class App extends Component {
 
                         <Route exact path="/" component={HelloWorld}/>
                         <Route exact path="/hello-world" component={HelloWorld}/>
-                        <Route exact path="/hello-you" component={HelloYou}/>
-                        <Route path="/hello-you/:name"
-                               component={(match) => <HelloYou name={match.match.params.name}> </HelloYou>}
+                        <Route exact path="/hello-message" component={HelloMessage}/>
+                        <Route path="/hello-your-name/:name"
+                               component={(match) => <HelloYourName name={match.match.params.name}> </HelloYourName>}
                         />
-                        <Route path="/chat-bubble" component={ChatBubble}/>
+                        <Route path="/chat-bubble" component={(match) => <ChatBubble message="hola, como andas?"/>}/>
                     </div>
                 </Router>
             </div>

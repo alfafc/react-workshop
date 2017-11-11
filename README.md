@@ -24,33 +24,36 @@ First of all, start to install `Git` & `npm` (and optionally `yarn`):
 
 ## Life Cycle
 
+React components and their life cycle:
+
 ![](https://raw.githubusercontent.com/Alfafc/react-workshop/master/public/reactjs_component_lifecycle_status.png)
-
-
-### 0 Creating an app
-
-This app have a lot of configuration done by default by create-react-app.
-You can do the same, doing this:
-
-`yarn global add create-react-app`
-`create-react-app react-workshop`
 
 
 ### 1 Hello world
 
-First met with react.
-Understand Virtual DOM and under the hood of JSX.
-Play around with JSX and non JSX syntax.
+First met with react and hot reload
+Understand Virtual DOM and under the hood of JSX
+Play around with JSX and non JSX syntax
 
 ### 2 Hello message
 
-First met with props.
+First met with props and components composition
+Play with defaults values and required props
+Task: add your profile image to the message
 
-## Router
+### 3 Hello your name
 
-yarn add react-router-dom
+First met with `react-router-dom`, and another way of receiving props
+Play with routes, paths, and "match" object
+Task: print current url and add a button to go back in history 
+
+### 4 Chat bubble
+
+First met with componentDidMount & componentWillUnmount
+
 
 ## Redux (recommended)
+componentDidMount
 
 ## Performance
 
@@ -61,6 +64,15 @@ https://reactjs.org/docs/installation.html
 https://pandao.github.io/editor.md/en.html
 
 https://github.com/facebookincubator/create-react-app
+
+
+### Creating an app
+
+For your first app, use `create-react-app` tool, it will make your life easier getting all default configurations:
+
+`yarn global add create-react-app`
+`create-react-app react-workshop`
+
 
 ## License
 

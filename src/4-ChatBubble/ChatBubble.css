@@ -6,8 +6,17 @@
     border-style: solid;
     border-radius: .4em;
     width: 350px;
-    padding-left: 10px ;
-    padding-right: 10px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bubble-time{
+    padding-top: 2px;
+    color: darkgray;
+    font-size: 14px;
+    float: right;
 }
 
 .speech-bubble-triangle {
