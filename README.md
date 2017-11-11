@@ -12,6 +12,10 @@ First of all, start to install `Git` & `npm` (and optionally `yarn`):
 - node https://nodejs.org/en/
 - yarn https://yarnpkg.com/en/docs/install
 
+Also it will be useful to install dev-tools for Chrome:
+
+- https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
 ## Why react?
 
 - Focused mainly on the user interface
@@ -39,21 +43,30 @@ Play around with JSX and non JSX syntax
 
 First met with props and components composition
 Play with defaults values and required props
+Task: install 
 Task: add your profile image to the message
 
 ### 3 Hello your name
 
 First met with `react-router-dom`, and another way of receiving props
 Play with routes, paths, and "match" object
-Task: print current url and add a button to go back in history 
+Look at history changes in react devtools
+Task: print current url and add a button to go back and forward in history with match.history.goBack/goForward
 
 ### 4 Chat bubble
 
-First met with componentDidMount & componentWillUnmount
+First met with interval and componentDidMount & componentWillUnmount methods
+Clean resources
+Use of moment library
+Understand Render method calls 
+Task: print ticks and see what happen with render method
+Task: implement state to become a stateful component
+
+### 5 Chat List
 
 
-## Redux (recommended)
-componentDidMount
+First met with react-perf-tool and react-addons-perf
+Task: run react performance
 
 ## Performance
 
@@ -64,6 +77,7 @@ https://reactjs.org/docs/installation.html
 https://pandao.github.io/editor.md/en.html
 
 https://github.com/facebookincubator/create-react-app
+## Redux (recommended)
 
 
 ### Creating an app
@@ -73,6 +87,7 @@ For your first app, use `create-react-app` tool, it will make your life easier g
 `yarn global add create-react-app`
 `create-react-app react-workshop`
 
+Also you can fork this project ;)
 
 ## License
 

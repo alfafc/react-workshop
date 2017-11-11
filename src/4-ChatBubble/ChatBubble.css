@@ -1,4 +1,8 @@
-.speech-bubble {
+.chat-bubble {
+    height: 50px;
+}
+
+.bubble {
     position: relative;
     background: white;
     border-color: #007582;
@@ -12,14 +16,14 @@
     padding-bottom: 5px;
 }
 
-.bubble-time{
+.bubble-time {
     padding-top: 2px;
     color: darkgray;
     font-size: 14px;
     float: right;
 }
 
-.speech-bubble-triangle {
+.bubble-triangle {
     content: '';
     position: relative;
     bottom: 0;

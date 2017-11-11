@@ -5,6 +5,10 @@
     link: white;
 }
 
+a:link {
+    color: cornflowerblue;
+}
+
 a:visited {
     color: cornflowerblue;
 }
