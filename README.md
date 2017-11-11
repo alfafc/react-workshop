@@ -12,9 +12,10 @@ First of all, start to install `Git` & `npm` (and optionally `yarn`):
 - node https://nodejs.org/en/
 - yarn https://yarnpkg.com/en/docs/install
 
-Also it will be useful to install dev-tools for Chrome:
+Also it will be useful to install dev-tools and react-perf for Chrome:
 
 - https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+- https://chrome.google.com/webstore/detail/react-perf/hacmcodfllhbnekmghgdlplbdnahmhmm
 
 ## Why react?
 
@@ -65,22 +66,28 @@ Task: implement state to become a stateful component
 
 ### 5 Chat List
 
-First met with `?react_perf in the query string` 
-Task: run react performance
+First met with `react-perf-tool` and `react-addons-perf`
+Task: uncomment perf line in App and run react performance tools, check instance and render count with inclusive option selected
+Task: increase chat bubbles to 10k and implement react-infinite
 
-(`react-perf-tool` and `react-addons-perf` not working on react v16 yet)
+### 6 Anim
 
-## Redux (recommended)
+First met with `react-motion`
+Task: implement message fade-in and fade-out with a button 
 
+### 7 Lab
 
-### Creating an app
-
+Just create your first app and start your project with reactjs.
 For your first app, use `create-react-app` tool, it will make your life easier getting all default configurations:
 
 `yarn global add create-react-app`
 `create-react-app react-workshop`
 
 Also you can fork this project ;)
+
+### Finishing
+
+Remember to pull request your results of the workshop, it may help others in the future
 
 ## License
 

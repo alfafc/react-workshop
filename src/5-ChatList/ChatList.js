@@ -6,11 +6,11 @@ class ChatList extends Component {
         let key = 0;
 
         return <div>
-            {
-                this.props.messages.map(m => {
-                    return <ChatBubble key={key++} message={m.text}/>;
-                })
-            }
+                {
+                    this.props.messages.map(m => {
+                        return <ChatBubble key={key++} message={m.text}/>;
+                    })
+                }
         </div>;
     }
 }
