@@ -4,11 +4,16 @@ import "./ChatBubble.css";
 
 class ChatBubble extends Component {
 
-    // Look how to add state here: https://reactjs.org/
+    constructor(props) {
+        super(props);
+        this.state = {ticks: 0};
+    }
 
     componentDidMount() {
-        this.ticks = 0;
-        this.interval = setInterval(() => this.ticks++, 1000);
+        let self = this;
+        this.interval = setInterval(() =>
+                self.setState({ticks: self.state.ticks + 1}),
+            1000);
     }
 
     componentWillUnmount() {
@@ -16,9 +21,12 @@ class ChatBubble extends Component {
     }
 
     render() {
+
         return <div className="chat-bubble">
             <div className="bubble">
-                <span className="bubble-time">  {moment().add(this.ticks * -1, 's').fromNow()}</span>
+                <span className="bubble-time">
+                    {moment().add(this.ticks * -1, 's').fromNow()}
+                    </span>
                 {this.props.message}
             </div>
             <div className="bubble-triangle">

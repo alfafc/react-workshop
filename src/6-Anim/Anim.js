@@ -7,9 +7,15 @@ class Anim extends Component {
 
         return <div>
             <Motion defaultStyle={{interpolated: 0}}
-                    style={{interpolated: spring(40, {stiffness: 79, damping: 16})}}>
-                {({interpolated}) =>
-                    <ChatBubble message={"hello " + interpolated}/>
+                    style={{
+                        interpolated:
+                            spring(400, {stiffness: 40, damping: 10})
+                    }}>
+                {
+                    ({interpolated}) =>
+                        <div style={{marginLeft: interpolated}}>
+                            <ChatBubble message={"hello " + interpolated}/>
+                        </div>
                 }
             </Motion>
         </div>;
