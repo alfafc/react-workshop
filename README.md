@@ -87,7 +87,7 @@ For your first app, use `create-react-app` tool, it will make your life easier g
 
 ### Finishing
 
-Remember to pull request your results of the workshop, it may help others in the future
+- Remember to pull request your results of the workshop, it may help others in the future
 
 ## License
 
